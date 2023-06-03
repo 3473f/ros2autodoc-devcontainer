@@ -6,7 +6,7 @@ This repo porvides a Visual Studio Code Devcontainer used for developing [ros2au
 ```
 git clone https://github.com/3473f/ros2autodoc-devcontainer
 ```
-2. Rename the file to `.devcontainer`
+2. Rename the folder to `.devcontainer`
 ```
 mv ros2autodoc-devcontainer .devcontainer
 ```
@@ -14,3 +14,8 @@ mv ros2autodoc-devcontainer .devcontainer
 ```
 mkdir -p colcon_ws/src
 ```
+4. Clone `ros2autodoc` to the workspace
+```
+git clone https://github.com/3473f/ros2autodoc
+```
+5. Open the folder in VS Code and launch the container
