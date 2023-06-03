@@ -16,6 +16,6 @@ mkdir -p colcon_ws/src
 ```
 4. Clone `ros2autodoc` to the workspace
 ```
-git clone https://github.com/3473f/ros2autodoc
+git clone https://github.com/3473f/ros2autodoc colcon_ws/src
 ```
-5. Open the folder in VS Code and launch the container
+5. Open the folder in VS Code and start the container
