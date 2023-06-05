@@ -13,5 +13,8 @@ RUN apt-get update && apt-get upgrade -y && \
 # downgrade setuptools to 58.2.0 to get rid of warning
 RUN pip3 install setuptools==58.2.0
 
+# install pre-commit
+RUN pip3 install pre-commit
+
 # source ros2
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
