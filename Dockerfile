@@ -17,4 +17,5 @@ RUN pip3 install setuptools==58.2.0
 RUN pip3 install pre-commit
 
 # source ros2
+USER 3473f
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
