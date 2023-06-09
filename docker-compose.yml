@@ -6,7 +6,14 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      - DISPLAY=:0 # $DISPLAY doesn't work - related issue: https://github.com/microsoft/vscode-remote-release/issues/7565
+      - PULSE_SERVER=$PULSE_SERVER
+      - WAYLAND_DISPLAY=$WAYLAND_DISPLAY
+      - XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR
     volumes:
       - ..:/workspace:cached
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /mnt/wslg:/mnt/wslg
     command: /bin/sh -c "while sleep 1000; do :; done"
     user: 3473f
