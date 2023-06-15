@@ -12,5 +12,15 @@
 	// connected. Corresponds to a volume mount in .devcontainer/docker-compose.yml
 	"workspaceFolder": "/workspace/colcon_ws",
 
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-iot.vscode-ros",
+				"ms-python.python",
+				"yzhang.markdown-all-in-one"
+			]
+		}
+	},
+
 	"remoteUser": "3473f"
 }
