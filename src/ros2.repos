@@ -1,0 +1,5 @@
+repositories:
+  ros2autodoc:
+    type: git
+    url: git@github.com:3473f/ros2autodoc.git
+    version: main
